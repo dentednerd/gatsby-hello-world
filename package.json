@@ -5,11 +5,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "heroku-postbuild": "gatsby build",
     "serve": "gatsby serve"
   },
   "dependencies": {
     "gatsby": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   }
